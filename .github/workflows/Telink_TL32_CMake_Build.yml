@@ -1,0 +1,106 @@
+name: Telink_TL32_CMake_Build
+
+on: [push, pull_request]
+
+jobs:
+  prepare_env:
+    runs-on: ubuntu-20.04
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Restore Cached Toolchain
+      id: Restore_Cached_Toolchain
+      uses: actions/cache@v4
+      with:
+        path: |
+          cdt2cmake_Linux_X64
+          V512f_Linux_X64
+        key: ${{ runner.os }}-toolchain-
+        restore-keys: |
+          ${{ runner.os }}-toolchain-D25F-GCC10
+     
+    - if: ${{ steps.Restore_Cached_Toolchain.outputs.cache-hit != 'true' }}
+      name: download and decompression toolchain
+      run: |
+        curl -o V512f_Linux_X64.tar.xz https://wiki.telink-semi.cn/tools_and_sdk/others/toolchains/V512f_Linux_X64.tar.xz
+        mkdir -p V512f_Linux_X64
+        tar -xf V512f_Linux_X64.tar.xz -C V512f_Linux_X64
+        if [ $? != 0 ]; then
+          echo "download toolchain fail"
+          exit 1
+        fi
+        ls
+        ls V512f_Linux_X64
+        
+        
+        curl -o cdt2cmake_Linux_X64.tar.xz https://wiki.telink-semi.cn/tools_and_sdk/others/cdt2cmake_Linux_X64_0.4.7.tar.xz
+        mkdir -p cdt2cmake_Linux_X64
+        tar -xf cdt2cmake_Linux_X64.tar.xz -C cdt2cmake_Linux_X64
+        if [ $? != 0 ]; then
+          echo "download cdt2cmake fail"
+          exit 1
+        fi
+        ls
+        ls cdt2cmake_Linux_X64
+        
+    - if: ${{ steps.Restore_Cached_Toolchain.outputs.cache-hit != 'true' }}
+      name: Cache Toolchain
+      uses: actions/cache@v4
+      with:
+        path: |
+          cdt2cmake_Linux_X64
+          V512f_Linux_X64
+          
+        key: ${{ runner.os }}-toolchain-D25F-GCC10
+
+
+  Linux_CMake_build:
+    runs-on: ubuntu-20.04
+    needs: prepare_env
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    - name: check parameters
+      run: |
+        echo "cproject ${{ github.event.inputs.cproject }}"
+        echo "target ${{ github.event.inputs.target }}"
+
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Restore Cached Toolchain
+      id: Restore_Cached_Toolchain
+      uses: actions/cache@v4
+      with:
+        path: |
+          cdt2cmake_Linux_X64
+          V512f_Linux_X64
+        key: ${{ runner.os }}-toolchain-D25F-GCC10
+        restore-keys: |
+          ${{ runner.os }}-toolchain-D25F-GCC10
+    
+    - name: convert cdt2cmake
+      run: |
+        echo "convert cdt2cmake"
+        ./cdt2cmake_Linux_X64/cdt2cmake.dist/cdt2cmake.bin ./build/iot_riscv_b92/.cproject -i
+        find . -name "CMakeLists.txt"
+        
+    - name: cmake build
+      shell: bash
+      run: |
+        echo "cmake building..."
+        cmake --version
+        cmake . -Bcmake_build -G "Unix Makefiles"  -DTOOLCHAIN_PATH=$(pwd)/V512f_Linux_X64/nds32le-elf-mculib-v5f -DCMAKE_C_COMPILER_FORCED=TRUE -DCMAKE_CXX_COMPILER_FORCED=TRUE 
+        cmake --build cmake_build --target concurrent_sampleLight_b92 -j32
+
+    - name: upload cmake output artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: cmake-bin-files
+        path: |
+          cmake_build/concurrent_sampleLight_b92*
+        retention-days: 1
