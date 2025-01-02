@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tl_zigbee_ble_concurrent_sdk_b92_20241217</name>
+	<name>tl_zigbee_ble_concurrent_sdk_b92</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -27,7 +27,7 @@
 		<link>
 			<name>algorithm</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/algorithm</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/algorithm</locationURI>
 		</link>
 		<link>
 			<name>apps</name>
@@ -42,22 +42,22 @@
 		<link>
 			<name>proj</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/proj</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/proj</locationURI>
 		</link>
 		<link>
 			<name>stack</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/stack</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/stack</locationURI>
 		</link>
 		<link>
 			<name>zbhci</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/zbhci</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/zbhci</locationURI>
 		</link>
 		<link>
 			<name>apps/bootLoader</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/apps/bootLoader</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/apps/bootLoader</locationURI>
 		</link>
 		<link>
 			<name>apps/common</name>
@@ -72,7 +72,7 @@
 		<link>
 			<name>apps/samplePlug_concurrent</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/apps/samplePlug_concurrent</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/apps/samplePlug_concurrent</locationURI>
 		</link>
 		<link>
 			<name>platform/boot</name>
@@ -82,7 +82,7 @@
 		<link>
 			<name>platform/chip_b92</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/platform/chip_b92</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/platform/chip_b92</locationURI>
 		</link>
 		<link>
 			<name>platform/firmware_encrypt.h</name>
@@ -92,7 +92,7 @@
 		<link>
 			<name>platform/platform.h</name>
 			<type>1</type>
-			<locationURI>copy_PARENT/platform/platform.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/platform/platform.h</locationURI>
 		</link>
 		<link>
 			<name>platform/services</name>
@@ -102,7 +102,7 @@
 		<link>
 			<name>platform/boot/b92</name>
 			<type>2</type>
-			<locationURI>copy_PARENT/platform/boot/b92</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/platform/boot/b92</locationURI>
 		</link>
 		<link>
 			<name>platform/boot/link_cfg.S</name>
