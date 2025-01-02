@@ -86,7 +86,7 @@ jobs:
     - name: convert cdt2cmake
       run: |
         echo "convert cdt2cmake"
-        ./cdt2cmake_Linux_X64/cdt2cmake.dist/cdt2cmake.bin ./zigbee_sdk/telink_zigbee_ble_concurrent_sdk/build/iot_riscv_b92/.cproject -i
+        ./cdt2cmake_Linux_X64/cdt2cmake.dist/cdt2cmake.bin ./telink_zigbee_ble_concurrent_sdk/build/iot_riscv_b92/.cproject -i
         find . -name "CMakeLists.txt"
         
     - name: cmake build
