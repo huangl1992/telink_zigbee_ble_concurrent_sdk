@@ -59,28 +59,28 @@
 								</option>
 								<option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.assembler.other.1741947135" name="Other assembler flags" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.assembler.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -fno-builtin -fomit-frame-pointer -fno-strict-aliasing -fuse-ld=bfd -fno-jump-tables" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.assembler.include.paths.1870530597" name="Include paths (-I)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.assembler.include.paths" useByScannerDiscovery="true" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_log/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_ftm_test/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_effect/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/driver/kp18057driver"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/driver/kp18056driver"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_power_on_count/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/common"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/hal"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/common"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/config"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/device/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_color_conversion/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/osal"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_driver_minitrim/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_cluster_utility/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/toolbox/include"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_color_algorithm/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_dim_algorithm/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_control/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_trf/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_cct_algorithm/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_source_params/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_log/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_ftm_test/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_effect/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/driver/kp18057driver"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/driver/kp18056driver"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_power_on_count/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/common"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/hal"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/common"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/config"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/device/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_color_conversion/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/osal"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_driver_minitrim/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_cluster_utility/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/toolbox/include"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_color_algorithm/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_dim_algorithm/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_control/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_trf/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_cct_algorithm/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_source_params/inc"/>
 									<listOptionValue builtIn="false" value="../../../apps/common"/>
 									<listOptionValue builtIn="false" value="../../../stack/ble/hal/hal_B92"/>
 									<listOptionValue builtIn="false" value="../../../stack/ble"/>
@@ -110,28 +110,28 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.compiler.include.paths.1913113710" name="Include paths (-I)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.c.compiler.include.paths" useByScannerDiscovery="true" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${eclipse_home}\RDS\V5.1.2\toolchains\nds32le-elf-mculib-v5f\lib\gcc\riscv32-elf\10.3.0\include&quot;"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_ftm_test/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_effect/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_trf/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_power_on_count/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/driver/kp18057driver"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/driver/kp18056driver"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/common"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/hal"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/config"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/common"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/device/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_color_conversion/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/bsp/tlsr92x/osal"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_driver_minitrim/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_cluster_utility/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/toolbox/include"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_log/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_cct_algorithm/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_dim_algorithm/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_control/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_color_algorithm/inc"/>
-									<listOptionValue builtIn="false" value="../../../../../lighting_cbb/components/lds_light_source_params/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_ftm_test/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_effect/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_trf/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_power_on_count/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/driver/kp18057driver"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/driver/kp18056driver"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/common"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/hal"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/config"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/common"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/device/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_color_conversion/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/bsp/tlsr92x/osal"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_driver_minitrim/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_cluster_utility/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/toolbox/include"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_log/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_cct_algorithm/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_dim_algorithm/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_control/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_color_algorithm/inc"/>
+									<listOptionValue builtIn="false" value="../../../lighting_cbb/components/lds_light_source_params/inc"/>
 									<listOptionValue builtIn="false" value="../../../stack/ble"/>
 									<listOptionValue builtIn="false" value="../../../stack/ble/hal/hal_B92"/>
 									<listOptionValue builtIn="false" value="../../../apps/common"/>
