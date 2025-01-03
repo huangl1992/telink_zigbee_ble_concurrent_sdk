@@ -94,7 +94,7 @@ jobs:
       run: |
         echo "cmake building..."
         cmake --version
-        cmake . -Bcmake_build -G "Unix Makefiles"  -DTOOLCHAIN_PATH=$(pwd)/V512f_Linux_X64/nds32le-elf-mculib-v5f -DCMAKE_C_COMPILER_FORCED=TRUE -DCMAKE_CXX_COMPILER_FORCED=TRUE 
+        cmake telink_zigbee_ble_concurrent_sdk_20241217 -Bcmake_build -G "Unix Makefiles"  -DTOOLCHAIN_PATH=$(pwd)/V512f_Linux_X64/nds32le-elf-mculib-v5f -DCMAKE_C_COMPILER_FORCED=TRUE -DCMAKE_CXX_COMPILER_FORCED=TRUE 
         cmake --build cmake_build --target concurrent_sampleLight_b92 -j32
 
     - name: upload cmake output artifacts
