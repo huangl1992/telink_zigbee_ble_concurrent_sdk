@@ -37,7 +37,7 @@
 		<link>
 			<name>lighting_cbb</name>
 			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/lighting_cbb</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/lighting_cbb</locationURI>
 		</link>
 		<link>
 			<name>platform</name>
@@ -102,7 +102,7 @@
 		<link>
 			<name>lighting_cbb/bsp/tlsr92x</name>
 			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/lighting_cbb/bsp/tlsr92x</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/lighting_cbb/bsp/tlsr92x</locationURI>
 		</link>
 		<link>
 			<name>platform/boot/b92</name>
