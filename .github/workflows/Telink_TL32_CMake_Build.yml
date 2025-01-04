@@ -86,7 +86,7 @@ jobs:
     - name: convert cdt2cmake
       run: |
         echo "convert cdt2cmake"
-        ./cdt2cmake_Linux_X64/cdt2cmake.dist/cdt2cmake.bin ./build/iot_riscv_b92/.cproject -i
+        ./cdt2cmake_Linux_X64/cdt2cmake.dist/cdt2cmake.bin ./ikea_light_project/telink_zigbee_ble_concurrent_sdk/build/iot_riscv_b92/.cproject -i
         find . -name "CMakeLists.txt"
         
     - name: cmake build
@@ -94,7 +94,7 @@ jobs:
       run: |
         echo "cmake building..."
         cmake --version
-        cmake . -Bcmake_build -G "Unix Makefiles"  -DTOOLCHAIN_PATH=$(pwd)/V512f_Linux_X64/nds32le-elf-mculib-v5f -DCMAKE_C_COMPILER_FORCED=TRUE -DCMAKE_CXX_COMPILER_FORCED=TRUE 
+        cmake ./ikea_light_project/telink_zigbee_ble_concurrent_sdk/ -Bcmake_build -G "Unix Makefiles"  -DTOOLCHAIN_PATH=$(pwd)/V512f_Linux_X64/nds32le-elf-mculib-v5f -DCMAKE_C_COMPILER_FORCED=TRUE -DCMAKE_CXX_COMPILER_FORCED=TRUE 
         cmake --build cmake_build --target concurrent_sampleLight_b92 -j32
 
     - name: upload cmake output artifacts
